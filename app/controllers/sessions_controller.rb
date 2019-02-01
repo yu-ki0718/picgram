@@ -27,8 +27,9 @@ private
   def log_out
     session.delete(:user_id)
     @current_user=nil
+  end
 
-    def session_params
-      params.require(:session).permit(:email, :password)
-    end
+  def session_params
+    params.require(:session).permit(:email, :password)
+  end
 end
