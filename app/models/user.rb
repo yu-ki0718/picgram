@@ -1,14 +1,10 @@
 class User < ApplicationRecord
   validates :name,presence:true,length: { in: 1..15 }
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email,presence:true,format:VALID_EMAIL_REGEX
-  validates :password,presence:true
+  validates :email,presence:true,format:{with:/[A-Za-z0-9._+]+@[A-Za-z]+.[A-Za-z]/i}
+  validates :password, presence: true, format: { with:  /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]{8,16}\z/i }
 
   has_secure_password
   has_many :topics
+  has_many :favorites
+  has_many :favorite_topics, through: :favorites, source: "topic"
 end
-
-# # email
-# [A-Za-z0-9._+]+@[A-Za-z]+.[A-Za-z]
-# # password
-# (?=.*?[a-z])(?=.*?\d)(?=.*?[A-Z])[a-zA-Z\d]{8,32}
