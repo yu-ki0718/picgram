@@ -12,4 +12,8 @@ Rails.application.routes.draw do
 
   get "favorites/index"
   post "/favorites", to:"favorites#create"
+
+  resources :comments
+  # get "comments/new"
+  # post "/comments", to:"comments#new"
 end
