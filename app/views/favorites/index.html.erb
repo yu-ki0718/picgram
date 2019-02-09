@@ -8,11 +8,9 @@
               <%= topic.user.name %>
             </h2>
             <%= image_tag topic.image.url %>
-            <% if !topic.comment_ids.include?(current_user) %>
-              <%= link_to comments_path(topic_id: topic.id) do %>
+              <% link_to comments_new_path(topic_id: topic.id), method: :post do %>
                 <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
               <% end %>
-            <% end %>
             <p class="topic-text">
               <%= topic.description %>
             </p>
