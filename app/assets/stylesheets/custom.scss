@@ -120,10 +120,29 @@ h1,h2{
       width: 100%;
     }
 
-    .topic-index-icon {
-      width: 35px;
-      height: 30px;
-      margin-left: 20px;
+    .h4{
+      padding-left: 10px;
+    }
+    .like-btn {
+      color: #8899a6;
+      padding-left: 10px;
+      font-size: 32px;
+    }
+    .like-btn-unlike {
+      color: #ff2581;
+      padding-left: 10px;
+      font-size: 32px;
+    }
+    .comment{
+      color: #808080;
+      padding-left: 10px;
+      font-size: 32px;
+    }
+    .trash{
+      color: #808080;
+      font-size: 32px;
+      float: right;
+      padding-right: 10px;
     }
   }
 }
