@@ -19,9 +19,9 @@ class TopicsController < ApplicationController
   end
 
   def destroy
-      @topic = Topic.find_by(user_id: current_user.id, topic_id: params[:topic_id])
+      topic = Topic.find_by(id: params[:id])
 
-      if @topic.destroy
+      if topic.destroy
         redirect_to topics_path, success: "投稿を削除しました"
       else
         redirect_to topics_path, danger: "投稿の削除に失敗しました"

@@ -1,32 +1,8 @@
 <div class="topic-index-wrapper">
   <div class="container">
-    <% @topics.comments%>
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
           <div class="topic-index-single">
-            <h2 class="topic-author">
-              <%= topic.user.name %>
-            </h2>
-            <%= image_tag topic.image.url %>
-            <% if !topic.favorite_users.include?(current_user) %>
-              <%= link_to favorites_path(topic_id: topic.id), method: :post do %>
-                 <span class="fa fa-heart like-btn"></span>
-              <% end %>
-            <% else %>
-                <%= link_to favorites_path(topic_id: topic.id),method: :delete do %>
-                <span class="fa fa-heart like-btn-unlike"></span>
-                <% end %>
-            <% end %>
-            ：<%= topic.favorites.count %>
-                <%= link_to comments_new_path(topic_id: topic.id), method: :get do %>
-                <span class="far fa-comment comment"></span>
-                <% end %>
-                <%= link_to topics_path(topic_id: topic.id), method: :delete do %>
-                <span class="far fa-trash-alt trash"></span>
-                <% end %>
-            <p class="topic-text">
-              <%= topic.description %>
-            </p>
             <%= form_for @comment do |f| %>
               <%= f.hidden_field :topic_id %>
               <%= f.hidden_field :user_id %>
@@ -39,6 +15,5 @@
           </div>
         </div>
       </div>
-    <% end %>
   </div>
 </div>

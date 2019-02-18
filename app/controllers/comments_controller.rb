@@ -1,16 +1,16 @@
 class CommentsController < ApplicationController
-  def index
-    @comment_topics = current_user.comment_user
-  end
+  # def index
+  #   @comment_topics = current_user.comment_user
+  # end
 
   def new
     @comment = Comment.new
     @comment.topic_id = params[:topic_id]
     @comment.user_id = session[:user_id]
+    @topics = Topic.find_by(id: params[:id])
   end
 
   def create
-    # binding.pry
     @comment = current_user.comments.new(comment_params)
 
     if @comment.save
