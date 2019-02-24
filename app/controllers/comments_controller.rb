@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new
     @comment.topic_id = params[:topic_id]
     @comment.user_id = session[:user_id]
-    @topics = Topic.find_by(id: params[:id])
+    @topics = Topic.find_by(id: params[:topic_id])
   end
 
   def create
