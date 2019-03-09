@@ -23,31 +23,28 @@
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
-              <%= link_to favorites_index_path do %>
+              <%= link_to favorites_index_path, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "お気に入り一覧"  do %>
                 <%= image_tag "icons/heart.png" %>
               <% end %>
             </li>
             <li>
-              <%= link_to new_user_path, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "Tooltip on top" do %>
+              <%= link_to new_topic_path, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "投稿" do %>
                 <%= image_tag "icons/camera.png" %>
               <% end %>
             </li>
-            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-               Tooltip on bottom
-            </button>
             <li>
-              <%= link_to logout_path, method: :delete do %>
+              <%= link_to logout_path, method: :delete, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "ログアウト"  do %>
                 <%= image_tag "icons/logout.png" %>
               <% end %>
             </li>
           <% else %>
             <li>
-              <%= link_to new_user_path do %>
+              <%= link_to new_user_path, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "新規登録"  do %>
                 <%= image_tag "icons/register.png" %>
               <% end %>
             </li>
             <li>
-              <%= link_to login_path do %>
+              <%= link_to login_path, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "ログイン"  do %>
                 <%= image_tag "icons/login.png" %>
               <% end %>
             </li>
@@ -61,10 +58,9 @@
     $(function(){
       $(".alert").fadeOut(5000);
     });
-
     $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+    })
     </script>
   </body>
 </html>
