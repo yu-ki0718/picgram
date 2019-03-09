@@ -11,3 +11,9 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+
+$(function(){
+  $(".user_tooltip").tooltip({
+    placement : 'top'
+  });
+})
