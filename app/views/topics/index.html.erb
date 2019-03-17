@@ -31,7 +31,7 @@
             <div>
               <% topic.comments.each do |comment| %>
               <p>
-                <%= comment.content %>
+                <%= comment.user.name %>: <%= comment.content %>
               </p>
               <% end %>
             </div>

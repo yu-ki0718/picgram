@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'rooms/show'
   get "sessions/new"
   get "pages/help"
   root "pages#index"
@@ -18,4 +19,7 @@ Rails.application.routes.draw do
   get "comments/index"
   get "comments/new"
   post "/comments", to:"comments#create"
+
+  root "rooms#show"
+  mount ActionCable.server => '/cable'
 end

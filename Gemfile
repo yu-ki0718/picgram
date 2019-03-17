@@ -49,6 +49,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
   gem 'chromedriver-helper'
+  gem 'rspec-rails'
 end
 
 group :development do
