@@ -33,6 +33,11 @@
               <% end %>
             </li>
             <li>
+              <%= link_to rooms_show_path, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "ダイレクトメッセージ"  do %>
+                <%= image_tag "icons/DM.png" %>
+              <% end %>
+            </li>
+            <li>
               <%= link_to logout_path, method: :delete, :data => {:toggle => "tooltip", :placement => "bottom" }, :class => "btn btn-secondary", :title => "ログアウト"  do %>
                 <%= image_tag "icons/logout.png" %>
               <% end %>

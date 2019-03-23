@@ -1,5 +1,9 @@
 <% cache message do %>
-  <div class="message">
-    <p><%= message.content %></p>
-  </div>
+<div id="chat-frame">
+  <p class="chat-talk">
+    <span class="talk-icon"><%= message.user.name %></span>
+    <span class="talk-content"><%= message.content %><%= message.created_at.strftime('%H:%M') %></span>
+  </p>
+</div>
 <% end %>
+
