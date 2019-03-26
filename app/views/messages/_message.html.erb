@@ -2,8 +2,9 @@
 <div id="chat-frame">
   <p class="chat-talk">
     <span class="talk-icon"><%= message.user.name %></span>
-    <span class="talk-content"><%= message.content %><%= message.created_at.strftime('%H:%M') %></span>
+    <span class="talk-content"><%= message.content %>
+      <span class="talk-time"><%= message.created_at.strftime('%H:%M') %></span>
+    </span>
   </p>
 </div>
 <% end %>
-
