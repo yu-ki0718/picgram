@@ -1,5 +1,9 @@
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+<<<<<<< HEAD
 /Users/yuuki/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20191210-23322-zbtpz7.rb extconf.rb
+=======
+/Users/yuuki/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20190928-93635-eswwql.rb extconf.rb
+>>>>>>> c71eba26b43a82bc3a24dc9de87a1100f58b3732
 
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
 make "DESTDIR=" clean

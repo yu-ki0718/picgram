@@ -1,5 +1,9 @@
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+<<<<<<< HEAD
 /Users/yuuki/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20191210-23322-13i9283.rb extconf.rb
+=======
+/Users/yuuki/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20190928-93635-9q1qj5.rb extconf.rb
+>>>>>>> c71eba26b43a82bc3a24dc9de87a1100f58b3732
 creating Makefile
 
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/debug_inspector-0.0.3/ext/debug_inspector
@@ -12,4 +16,8 @@ linking shared-object debug_inspector.bundle
 
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/debug_inspector-0.0.3/ext/debug_inspector
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20191210-23322-83bhtb
+=======
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20190928-93635-1fnfd3y
+>>>>>>> c71eba26b43a82bc3a24dc9de87a1100f58b3732

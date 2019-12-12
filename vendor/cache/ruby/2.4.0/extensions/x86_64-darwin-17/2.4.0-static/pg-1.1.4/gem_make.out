@@ -1,5 +1,9 @@
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/pg-1.1.4/ext
+<<<<<<< HEAD
 /Users/yuuki/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20191210-23322-2cdlkj.rb extconf.rb
+=======
+/Users/yuuki/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20190928-93635-bi36hi.rb extconf.rb
+>>>>>>> c71eba26b43a82bc3a24dc9de87a1100f58b3732
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
 checking for libpq-fe.h... yes
@@ -48,4 +52,8 @@ linking shared-object pg_ext.bundle
 
 current directory: /Users/yuuki/Desktop/pictgram/vendor/cache/ruby/2.4.0/gems/pg-1.1.4/ext
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20191210-23322-1qja6p5
+=======
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20190928-93635-fxmook
+>>>>>>> c71eba26b43a82bc3a24dc9de87a1100f58b3732
