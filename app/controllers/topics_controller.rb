@@ -1,7 +1,8 @@
 class TopicsController < ApplicationController
   def index
     @q = Topic.ransack(params[:q])
-    @topics = @q.result  end
+    @topics = @q.result 
+  end
 
   def new
     @topic=Topic.new
