@@ -24,9 +24,4 @@ end
 
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
-<<<<<<< HEAD
   end
-=======
-  end
-  
->>>>>>> c71eba26b43a82bc3a24dc9de87a1100f58b3732
