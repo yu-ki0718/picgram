@@ -1,5 +1,9 @@
 {
   "name": "pictgram",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.2"
+  }
 }
