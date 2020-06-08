@@ -168,21 +168,12 @@ GEM
     mysql2 (0.5.3-x86-mswin32-60)
     nio4r (2.5.2)
     nio4r (2.5.2-java)
-<<<<<<< HEAD
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-java)
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-x86-mingw32)
-=======
-    nokogiri (1.10.8)
-      mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.8-java)
-    nokogiri (1.10.8-x64-mingw32)
-      mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.8-x86-mingw32)
->>>>>>> d6dc4499c24ae47ec335b5e8ea1316fbdeef52f8
       mini_portile2 (~> 2.4.0)
     pg (1.2.3)
     pg (1.2.3-x64-mingw32)
@@ -204,7 +195,6 @@ GEM
       yard (~> 0.9.11)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
-<<<<<<< HEAD
     pry-stack_explorer (0.4.11)
       binding_of_caller (~> 0.7)
       pry (~> 0.13)
@@ -212,15 +202,6 @@ GEM
     puma (3.12.6)
     puma (3.12.6-java)
     rack (2.2.2)
-=======
-    pry-stack_explorer (0.4.9.3)
-      binding_of_caller (>= 0.7)
-      pry (>= 0.9.11)
-    public_suffix (4.0.1)
-    puma (3.12.6)
-    puma (3.12.6-java)
-    rack (2.0.7)
->>>>>>> d6dc4499c24ae47ec335b5e8ea1316fbdeef52f8
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.4.3)
